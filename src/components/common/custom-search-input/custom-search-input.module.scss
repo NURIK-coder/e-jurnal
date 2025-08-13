@@ -1,0 +1,69 @@
+.customSearchInput {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #6c757d; /* MUI label color */
+    transition: color 0.3s ease;
+  }
+  
+  .inputWrapper {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .input {
+    padding: 12px 12px 12px 40px; /* Adjust padding for search icon */
+    font-size: 16px;
+    border: 1px solid #ced4da; /* Light grey border */
+    border-radius: 4px;
+    background-color: #fff;
+    color: #000;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Full width by default */
+  
+    &:focus {
+      border-color: #007bff; /* MUI focus color */
+      box-shadow: 0 0 0 2px rgba(38, 143, 255, 0.2); /* MUI focus shadow */
+      outline: none;
+    }
+  
+    &:disabled {
+      background-color: #f5f5f5; /* Light grey background for disabled state */
+      border-color: #e0e0e0; /* Light grey border for disabled state */
+      cursor: not-allowed;
+    }
+  }
+  
+  .searchIcon {
+    position: absolute;
+    left: 12px; /* Position the search icon */
+    color: #6c757d;
+  }
+  
+  .clearButton {
+    margin-left: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff; /* Adjust color as needed */
+    font-size: 1em;
+    position: absolute;
+    right: 12px; /* Position the clear button */
+  }
+  
+  .errorInput {
+    border-color: #dc3545; /* Red border for error state */
+  }
+  
+  .errorMessage {
+    color: #dc3545; /* Red color for error message */
+    margin-top: 4px;
+    font-size: 12px;
+  }
+  

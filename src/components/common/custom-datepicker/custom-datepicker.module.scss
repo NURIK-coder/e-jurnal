@@ -1,0 +1,56 @@
+.datePickerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.label {
+  font-size: 0.875rem; /* Similar to MUI's typography */
+  color: #333; /* Adjust for light/dark mode */
+  margin-bottom: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.datePickerInput {
+  font-size: 1rem;
+  padding: 10px 12px;
+  border-radius: 4px;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  background-color: #fff;
+  color: #495057;
+  width: 100%;
+  outline: none;
+
+  &:focus {
+    border-color: #1976d2; /* MUI primary color */
+    box-shadow: 0 0 0 2px rgba(25, 118, 210, 0.2); /* MUI focus shadow */
+  }
+}
+
+.outlined {
+  border: 1px solid #ced4da; /* Default border */
+}
+
+.standard {
+  border-bottom: 1px solid #ced4da; /* Standard style */
+  border-radius: 0;
+}
+
+.error {
+  border-color: #d32f2f !important; /* MUI error color */
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.2); /* Error focus shadow */
+}
+
+.helperText {
+  font-size: 0.75rem;
+  color: #d32f2f; /* MUI error color */
+  margin: 0;
+}

@@ -1,0 +1,62 @@
+// CustomSwitch.module.scss
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 26px;
+
+  &Input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &Slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+
+    &:before {
+      position: absolute;
+      content: "";
+      height: 20px;
+      width: 20px;
+      left: 3px;
+      bottom: 3px;
+      background-color: white;
+      transition: 0.4s;
+      border-radius: 50%;
+    }
+  }
+
+  &Input:checked + &Slider {
+    background-color: #1976d2; // MUI primary color
+
+    &:before {
+      transform: translateX(16px);
+    }
+  }
+
+  &Input:focus + &Slider {
+    box-shadow: 0 0 1px #1976d2;
+  }
+
+  &Input:disabled + &Slider {
+    background-color: #bdbdbd; // Disabled color
+    cursor: not-allowed;
+
+    &:before {
+      background-color: #e0e0e0;
+    }
+  }
+}
+
+.disabled {
+  cursor: not-allowed;
+}

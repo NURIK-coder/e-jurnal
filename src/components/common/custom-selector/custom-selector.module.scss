@@ -1,0 +1,89 @@
+// custom-selector.module.scss
+
+.customSelector {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    // box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  
+    &:focus {
+      border-color: #3f51b5; // MUI primary color
+      box-shadow: 0 0 0 2px rgba(63, 81, 181, 0.2); // MUI primary color with opacity
+      outline: none;
+    }
+  
+    &:disabled {
+      background-color: #f5f5f5;
+      border-color: #e0e0e0;
+      cursor: not-allowed;
+    }
+  }
+  
+  .error {
+    border-color: #f44336; // MUI error color
+    box-shadow: 0 0 0 2px rgba(244, 67, 54, 0.2); // MUI error color with opacity
+  }
+  
+  .errorMessage {
+    color: #f44336;
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  
+  .dropdownContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: auto;
+  }
+  
+  .searchInput {
+    width: 100%;
+    padding: 8px 12px;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  .optionsContainer {
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  .option {
+    padding: 10px 12px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 24px;
+    transition: background-color 0.3s, color 0.3s;
+  
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  
+    &.selected {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+  }
+  

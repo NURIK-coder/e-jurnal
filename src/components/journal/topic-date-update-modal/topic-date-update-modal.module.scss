@@ -1,0 +1,29 @@
+.title {
+  color: #253b80;
+  margin-bottom: 1rem;
+}
+.form {
+  display: grid;
+  align-items: flex-end;
+  grid-template-columns: 1fr;
+  margin: auto;
+  gap: 20px;
+  background: #f5f5f5;
+  padding: 1rem;
+  border-radius: 8px;
+  .formGroup {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+}
+.submitBtnWrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+  .submitButton {
+    background: #3d8dbc;
+    color: #fff;
+    margin-left: auto;
+  }
+}
